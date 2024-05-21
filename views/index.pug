@@ -1,0 +1,154 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title EchoDoc_V2
+    // Favicon
+    link(href="/assets/img/brand/mini-logo.png" rel="icon" type="image/png")
+    // Fonts
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet")
+    // Icons
+    link(href="/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet")
+    link(href="/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" )
+    link(href="/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet")
+
+  body
+    nav.navbar.navbar-vertical.fixed-left.navbar-expand-md.navbar-light.bg-white#sidenav-main
+      .container-fluid
+        // Toggler
+        button.navbar-toggler(type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        // Brand
+        a.navbar-brand.pt-0(href="./index.html")
+          img(src="/assets/img/brand/logo.png" class="navbar-brand-img" alt="...")
+        // User
+        ul.nav.align-items-center.d-md-none
+          li.nav-item.dropdown
+            a.nav-link.nav-link-icon(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              i.ni.ni-bell-55
+            .dropdown-menu.dropdown-menu-arrow.dropdown-menu-right(aria-labelledby="navbar-default_dropdown_1")
+              a.dropdown-item(href="#") Action
+              a.dropdown-item(href="#") Another action
+              .dropdown-divider
+              a.dropdown-item(href="#") Something else here
+          li.nav-item.dropdown
+            a.nav-link(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+              .media.align-items-center
+                span.avatar.avatar-sm.rounded-circle
+                  img(alt="Image placeholder" src="/assets/img/theme/team-4-800x800.jpg")
+            .dropdown-menu.dropdown-menu-arrow.dropdown-menu-right
+              .dropdown-header.noti-title
+                h6.text-overflow.m-0 Welcome!
+              a.dropdown-item(href="/examples/profile.html")
+                i.ni.ni-single-02
+                span My profile
+              a.dropdown-item(href="/examples/profile.html")
+                i.ni.ni-settings-gear-65
+                span Settings
+              a.dropdown-item(href="/examples/profile.html")
+                i.ni.ni-calendar-grid-58
+                span Activity
+              a.dropdown-item(href="/examples/profile.html")
+                i.ni.ni-support-16
+                span Support
+              .dropdown-divider
+              a.dropdown-item(href="#!")
+                i.ni.ni-user-run
+                span Logout
+        // Collapse
+        .collapse.navbar-collapse#sidenav-collapse-main
+          // Collapse header
+          .navbar-collapse-header.d-md-none
+            .row
+              .col-6.collapse-brand
+                a(href="./index.html")
+                  img(src="/assets/img/brand/logo.png")
+              .col-6.collapse-close
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav")
+                  span
+                  span
+          // Form
+          form.mt-4.mb-3.d-md-none
+            .input-group.input-group-rounded.input-group-merge
+              input.form-control.form-control-rounded.form-control-prepended(type="search" placeholder="Search" aria-label="Search")
+              .input-group-prepend
+                .input-group-text
+                  span.fa.fa-search
+          // Navigation
+          ul.navbar-nav
+            li.nav-item.active
+              a.nav-link.active(href="./index.html")
+                i.ni.ni-tv-2.text-primary Home Page
+    .main-content
+      // Navbar
+      nav.navbar.navbar-top.navbar-expand-md.navbar-dark#navbar-main
+        .container-fluid
+          // Brand
+          a.h4.mb-0.text-white.text-uppercase.d-none.d-lg-inline-block(href="/index.html") EchoDoc Real Time Conversation
+          // Form
+          form.navbar-search.navbar-search-dark.form-inline.mr-3.d-none.d-md-flex.ml-lg-auto
+            .form-group.mb-0
+              .input-group.input-group-alternative
+                .input-group-prepend
+                  span.input-group-text
+                    i.fas.fa-search
+                input.form-control(type="text" placeholder="Search")
+          // User
+          ul.navbar-nav.align-items-center.d-none.d-md-flex
+            li.nav-item.dropdown
+              a.nav-link.pr-0(href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false")
+                .media.align-items-center
+                  span.avatar.avatar-sm.rounded-circle
+                    img(alt="Image placeholder" src="/assets/img/theme/team-4-800x800.jpg")
+                  .media-body.ml-2.d-none.d-lg-block
+                    span.mb-0.text-sm.font-weight-bold Jessica Jones
+              .dropdown-menu.dropdown-menu-arrow.dropdown-menu-right
+                .dropdown-header.noti-title
+                  h6.text-overflow.m-0 Welcome!
+                a.dropdown-item(href="/examples/profile.html")
+                  i.ni.ni-single-02
+                  span My profile
+                a.dropdown-item(href="/examples/profile.html")
+                  i.ni.ni-settings-gear-65
+                  span Settings
+                a.dropdown-item(href="/examples/profile.html")
+                  i.ni.ni-calendar-grid-58
+                  span Activity
+                a.dropdown-item(href="/examples/profile.html")
+                  i.ni.ni-support-16
+                  span Support
+                .dropdown-divider
+                a.dropdown-item(href="#!")
+                  i.ni.ni-user-run
+                  span Logout
+      // Header
+      .bg-gradient-primary.pb-8.pt-5
+        .container-fluid
+          .header-body
+            // Card stats
+            .row
+      .container-fluid
+        .row
+        .row
+          .real-time-interface
+            p#real-time-title.real-time-interface__title Click start to begin recording!
+            p#button.real-time-interface__button.btn.btn-success Start
+            p#message.real-time-interface__message
+    // Core JS
+    script(src="/assets/js/plugins/jquery/dist/jquery.min.js")
+    script(src="/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js")
+    // Optional JS
+    script(src="/assets/js/plugins/chart.js/dist/Chart.min.js")
+    script(src="/assets/js/plugins/chart.js/dist/Chart.extension.js")
+    // Argon JS
+    script(src="/assets/js/argon-dashboard.min.js?v=1.1.2")
+    script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")    
+    script(src="/assemblyai.js")
+    script(src="/javascripts/index.js")
+    script.
+      window.TrackJS &&
+        TrackJS.install({
+          token: "ee6fab19c5a04ac1a32a645abde4613a",
+          application: "argon-dashboard-free"
+        })

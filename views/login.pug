@@ -1,0 +1,55 @@
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title EchoDoc_V2
+    // Favicon
+    link(href="/assets/img/brand/mini-logo.png" rel="icon" type="image/png")
+    // Fonts
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet")
+    // Icons
+    link(href="/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet")
+    link(href="/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" )
+    link(href="/assets/css/argon-dashboard.css?v=1.1.2" rel="stylesheet")  
+    style.
+     .login-css {
+       margin-top: 100px;
+      }
+body 
+.container.login-css
+  .row.justify-content-center
+    .col-lg-5.col-md-7
+      .card.bg-secondary.shadow.border-0
+        .card-body.px-lg-5.py-lg-5
+          .text-center.text-muted.mb-4
+            small Sign in with credentials
+          form(action="/api/auth/login", role="form", method="post")
+            .form-group.mb-3
+              .input-group.input-group-alternative
+                .input-group-prepend
+                  span.input-group-text
+                    i.ni.ni-email-83
+                input.form-control(placeholder="Email", type="email", name="email")
+            .form-group
+              .input-group.input-group-alternative
+                .input-group-prepend
+                  span.input-group-text
+                    i.ni.ni-lock-circle-open
+                input.form-control(placeholder="Password", type="password", name="password")
+            .custom-control.custom-control-alternative.custom-checkbox
+              input.custom-control-input#customCheckLogin(type='checkbox', name="rememberme")
+              label.custom-control-label(for='customCheckLogin')
+                span.text-muted Remember me
+            .text-center
+              button.btn.btn-primary.my-4(type="submit") Sign in
+
+
+    // Core JS
+    script(src="/assets/js/plugins/jquery/dist/jquery.min.js")
+    script(src="/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js")
+    // Optional JS
+    script(src="/assets/js/plugins/chart.js/dist/Chart.min.js")
+    script(src="/assets/js/plugins/chart.js/dist/Chart.extension.js")
+    // Argon JS
+    script(src="/assets/js/argon-dashboard.min.js?v=1.1.2")
+    script(src="https://cdn.trackjs.com/agent/v3/latest/t.js")    
