@@ -1,7 +1,7 @@
 const { AssemblyAI } = require("assemblyai");
 const axios = require('axios');
 const externalAPIService = require('../services/externalAPIService');
-
+require('dotenv').config();
 
 
 
@@ -52,7 +52,7 @@ exports.getSummary = async (req, res) => {
         repetition_penalty: 1
       },
       model_id: "meta-llama/llama-3-70b-instruct",
-      project_id: "e1363d91-de17-4578-af85-6b461f5e7115",
+      project_id: process.env.PROJECT_ID,
       moderations: {
           hap: {
               input: {
